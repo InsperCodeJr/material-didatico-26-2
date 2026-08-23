@@ -1,5 +1,5 @@
-site_name: Insper Code Jr. - Apostilas
-site_description: Material didatico para os encontros da Insper Code Jr.
+site_name: Insper Code Jr. - Material Didático
+site_description: Material didático para os encontros da Insper Code Jr.
 site_author: Insper Code Jr.
 
 docs_dir: docs
@@ -41,7 +41,12 @@ theme:
     repo: fontawesome/brands/github
 
 nav:
-  - Inicio: index.md
+  - Início: index.md
+  - Cronograma:
+      - Visão geral: cronograma.md
+      - Entregáveis por reunião: reunioes.md
+  - Utilidades: etiqueta.md
+  - Aulas: aulas.md
 
 markdown_extensions:
   - admonition
