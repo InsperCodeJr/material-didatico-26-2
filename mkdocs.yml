@@ -7,8 +7,38 @@ site_dir: site
 strict: true
 
 theme:
-  name: mkdocs
-  highlightjs: true
+  name: material
+  language: pt-BR
+  logo: img/back.png
+  favicon: img/favicon.ico
+  font: false
+  palette:
+    # Modo claro
+    - scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Mudar para modo escuro
+    # Modo escuro
+    - scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Mudar para modo claro
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - toc.integrate
+  icon:
+    repo: fontawesome/brands/github
 
 nav:
   - Inicio: index.md
@@ -20,6 +50,14 @@ markdown_extensions:
   - tables
   - toc:
       permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
 
 plugins:
   - search
