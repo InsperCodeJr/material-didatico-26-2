@@ -1,0 +1,25 @@
+site_name: Insper Code Jr. - Apostilas
+site_description: Material didatico para os encontros da Insper Code Jr.
+site_author: Insper Code Jr.
+
+docs_dir: docs
+site_dir: site
+strict: true
+
+theme:
+  name: mkdocs
+  highlightjs: true
+
+nav:
+  - Inicio: index.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - tables
+  - toc:
+      permalink: true
+
+plugins:
+  - search
