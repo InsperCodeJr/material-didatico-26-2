@@ -11,10 +11,10 @@ capacitações.
 Use as abas no topo para navegar por:
 
 - **Cronograma**: datas, reuniões, entregáveis e contatos do semestre.
+- **Presença e horas**: presença, justificativas de falta e atribuição de horas.
 - **Utilidades**: README, commits, branches, pull requests e etiqueta de
   trabalho em repositórios.
 - **Aulas**: páginas reservadas para os conteúdos das capacitações.
-
 
 ## Gestão 2026.2 e contatos
 

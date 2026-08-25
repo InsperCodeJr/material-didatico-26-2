@@ -5,7 +5,6 @@ que cada turma já viu de capacitação até aquele momento. A ideia não é
 cobrar código pronto o tempo todo, e sim avaliar se o time está entendendo
 o problema, gerenciando bem o projeto e evoluindo de forma consistente.
 
-
 ## 11/09 — Reunião intermediária 1: definição e estruturação
 
 Foco principal: **"vocês entenderam o que precisam construir?"**, e não
@@ -84,6 +83,16 @@ gestão do projeto**, não sobre conteúdos ainda não vistos.
 Nesta reunião todas as seis capacitações já aconteceram. Além dos
 entregáveis específicos de cada case, existe um **pacote obrigatório de
 encerramento**, comum a todos os projetos.
+
+### Banca própria do cliente
+
+Além das entregas finais, cada grupo terá uma reunião com o cliente ou
+empresa para apresentar o projeto à banca própria do cliente. Essa reunião
+acontecerá uma semana antes ou depois da reunião final, conforme
+disponibilidade da equipe e do cliente.
+
+Nesses encontros, a vestimenta adequada é obrigatória: **casual
+profissional**.
 
 ### 1. README final completo
 

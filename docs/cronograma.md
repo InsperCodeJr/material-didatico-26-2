@@ -1,7 +1,7 @@
 # Cronograma
 
-Esta página organiza as principais datas do semestre, as reuniões de
-acompanhamento, os entregáveis esperados e os contatos de apoio.
+Datas do semestre, reuniões de acompanhamento, entregáveis esperados e
+preparação inicial da turma.
 
 ## Calendário do semestre
 
@@ -18,12 +18,19 @@ acompanhamento, os entregáveis esperados e os contatos de apoio.
 | 20/10 | Capacitação 5 | **IA Aplicada ao Desenvolvimento**: LLMs, tokens e contexto, prompting, APIs de IA, structured outputs, embeddings, RAG, agentes e ferramentas de coding assistido. |
 | 27/10 | Capacitação 6 | **Qualidade, Segurança & Manutenibilidade**: testes, segurança básica, secrets, logs, observabilidade, GitHub Actions/CI/CD, revisão arquitetural, dívida técnica e decisões técnicas. |
 | 30/10 | Reunião final | Fechamento do semestre, apresentações finais dos projetos e feedbacks. Ver [entregáveis desta reunião](reunioes.md#3010-reuniao-final-produto-documentacao-legado). |
+| A definir | Banca do cliente | Reunião de cada grupo com o cliente ou empresa, uma semana antes ou depois da reunião final, conforme disponibilidade da equipe e do cliente. Ver [orientações da banca](reunioes.md#banca-propria-do-cliente). |
 
 !!! info "Critérios detalhados das reuniões"
-    Os entregáveis esperados em cada reunião de acompanhamento estão
-    reunidos na página **[Entregáveis por reunião](reunioes.md)**.
+    Os entregáveis esperados em cada reunião de acompanhamento estão em
+    **[Entregáveis por reunião](reunioes.md)**.
+
+!!! info "Presença, faltas e horas"
+    Regras de presença nas capacitações, justificativas de ausência e
+    atribuição de horas estão em **[Presença e horas](combinados.md)**.
 
 ## Entregáveis por reunião
+
+Resumo rápido — detalhes completos em [Entregáveis por reunião](reunioes.md).
 
 | Data | Reunião | Entregáveis principais |
 | --- | --- | --- |
@@ -33,9 +40,8 @@ acompanhamento, os entregáveis esperados e os contatos de apoio.
 
 ## Preparação inicial
 
-O primeiro encontro organiza o ponto de partida da turma. O objetivo é
-alinhar o ambiente de trabalho, apresentar o formato das oficinas e garantir
-que todos consigam rodar um primeiro projeto localmente.
+O primeiro encontro alinha o ambiente de trabalho, o formato das oficinas e
+garante que todos consigam rodar um primeiro projeto localmente.
 
 ??? question "Ferramentas básicas"
     - **Git**: controle de versão.
@@ -43,5 +49,4 @@ que todos consigam rodar um primeiro projeto localmente.
     - **Python 3** ou **Node.js**, dependendo do projeto do encontro.
     - Uma conta ativa no **GitHub**.
 
-    Se tiver dúvidas em como instalar algo, procure a diretoria de Tech
-    durante o encontro.
+    Dúvidas de instalação: procure a diretoria de Tech durante o encontro.

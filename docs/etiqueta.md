@@ -1,16 +1,14 @@
 # Utilidades
 
-Esta página reúne combinados práticos para manter os repositórios dos projetos
-claros, revisáveis e fáceis de continuar no semestre seguinte.
+Combinados práticos para manter os repositórios dos projetos claros,
+revisáveis e fáceis de continuar no semestre seguinte.
 
 ## README
 
-Um bom `README.md` responde rapidamente a três perguntas: **o que é o
-projeto**, **como rodar** e **como contribuir ou continuar o trabalho**.
+Um bom `README.md` responde a três perguntas: **o que é o projeto**, **como
+rodar** e **como contribuir ou continuar o trabalho**.
 
 ### Estrutura recomendada
-
-Use esta estrutura como ponto de partida:
 
 ````md
 # Nome do projeto
@@ -66,24 +64,23 @@ Link da aplicação, ambiente usado e observações importantes.
 - Nome 2
 ````
 
-### Exemplo curto
-
+!!! example "Exemplo curto"
 ````md
-# Agenda Solidária
+    # Agenda Solidária
 
-Sistema web para organizar voluntários, eventos e inscrições de uma ONG.
-O projeto centraliza a agenda, reduz confirmação manual por WhatsApp e
-permite acompanhar presença por evento.
+    Sistema web para organizar voluntários, eventos e inscrições de uma ONG.
+    O projeto centraliza a agenda, reduz confirmação manual por WhatsApp e
+    permite acompanhar presença por evento.
 
-## Como rodar
+    ## Como rodar
 
 ```bash
-cp .env.example .env
-npm install
-npm run dev
+    cp .env.example .env
+    npm install
+    npm run dev
 ```
 
-Depois, acesse `http://localhost:5173`.
+    Depois, acesse `http://localhost:5173`.
 ````
 
 ### Checklist de qualidade
@@ -102,95 +99,88 @@ aleatórias.
 
 ### Formato recomendado
 
-```txt
+````txt
 tipo: descrição curta no imperativo
-```
+````
 
-Tipos úteis:
+Tipos úteis: `feat` (nova funcionalidade), `fix` (correção de bug), `docs`
+(documentação), `style` (formatação sem mudança de regra), `refactor`
+(reorganização sem mudar comportamento), `test` (criação ou ajuste de
+testes), `chore` (manutenção, configs e dependências).
 
-- `feat`: nova funcionalidade
-- `fix`: correção de bug
-- `docs`: documentação
-- `style`: formatação ou ajuste visual sem mudança de regra
-- `refactor`: reorganização sem mudar comportamento
-- `test`: criação ou ajuste de testes
-- `chore`: manutenção, configs e dependências
+!!! example "Bons exemplos"
+````txt
+    feat: add volunteer registration form
+    fix: prevent duplicate event subscriptions
+    docs: explain local setup in README
+    test: cover login validation errors
+    chore: update mkdocs navigation
+````
 
-### Bons exemplos
-
-```txt
-feat: add volunteer registration form
-fix: prevent duplicate event subscriptions
-docs: explain local setup in README
-test: cover login validation errors
-chore: update mkdocs navigation
-```
-
-### Evite
-
-```txt
-arrumei coisas
-final
-update
-commit novo
-mudanças
-```
+!!! danger "Evite"
+````txt
+    arrumei coisas
+    final
+    update
+    commit novo
+    mudanças
+````
 
 ## Branches
 
 Nomeie branches pelo trabalho que elas carregam:
 
-```txt
+````txt
 feat/login-page
 fix/calendar-timezone
 docs/readme-setup
 chore/mkdocs-nav
-```
+````
 
 Antes de abrir um pull request, atualize sua branch com a base combinada do
 time e rode os checks locais disponíveis.
 
 ## Pull requests
 
-Um pull request deve ser pequeno o suficiente para alguém revisar com atenção.
-Explique o que mudou, como testar e quais decisões precisam de cuidado.
+Um pull request deve ser pequeno o suficiente para alguém revisar com
+atenção. Explique o que mudou, como testar e quais decisões precisam de
+cuidado.
 
-Modelo sugerido:
+!!! example "Modelo sugerido"
+````md
+    ## O que mudou
 
-```md
-## O que mudou
+    - Adiciona formulário de cadastro de voluntários
+    - Salva inscrições no banco
+    - Mostra mensagem de erro para e-mail inválido
 
-- Adiciona formulário de cadastro de voluntários
-- Salva inscrições no banco
-- Mostra mensagem de erro para e-mail inválido
+    ## Como testar
 
-## Como testar
+    1. Rode `npm run dev`
+    2. Acesse `/voluntarios/novo`
+    3. Tente cadastrar um e-mail inválido
+    4. Cadastre um voluntário válido
 
-1. Rode `npm run dev`
-2. Acesse `/voluntarios/novo`
-3. Tente cadastrar um e-mail inválido
-4. Cadastre um voluntário válido
+    ## Observações
 
-## Observações
-
-- Ainda falta conectar a listagem geral de voluntários.
-```
+    - Ainda falta conectar a listagem geral de voluntários.
+````
 
 ## Issues e tarefas
 
-Tarefas boas têm escopo claro e critério de pronto. Prefira:
+Tarefas boas têm escopo claro e critério de pronto.
 
-```md
-Criar tela de cadastro de voluntário
+!!! example "Prefira"
+````md
+    Criar tela de cadastro de voluntário
 
-Critérios de aceite:
-- [ ] Usuário consegue preencher nome, e-mail e telefone
-- [ ] Sistema valida e-mail inválido
-- [ ] Cadastro válido aparece na lista de voluntários
-```
+    Critérios de aceite:
+    - [ ] Usuário consegue preencher nome, e-mail e telefone
+    - [ ] Sistema valida e-mail inválido
+    - [ ] Cadastro válido aparece na lista de voluntários
+````
 
-Em vez de:
-
-```md
-Fazer parte dos voluntários
-```
+!!! danger "Em vez de"
+````md
+    Fazer parte dos voluntários
+````
