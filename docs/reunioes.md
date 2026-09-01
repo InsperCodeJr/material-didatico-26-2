@@ -13,8 +13,7 @@ Foco principal: **"vocês entenderam o que precisam construir?"**.
 
 - [ ] Descrição do projeto
 - [ ] Tecnologias previstas
-- [ ] Instruções iniciais para configuração do ambiente
-- [ ] Integrantes e responsabilidades
+- [ ] Integrantes
 
 **Documento de requisitos**
 
@@ -26,31 +25,25 @@ Foco principal: **"vocês entenderam o que precisam construir?"**.
 
 **Backlog priorizado**
 
-- [ ] Funcionalidades/tarefas
-- [ ] Prioridade
-- [ ] Responsável
-- [ ] Status
+- [ ] Print do Backlog inicial com size, responsável e organização em sprints.
 
 
 **Registro do alinhamento com o cliente**
 
-- [ ] Principais necessidades levantadas
-- [ ] Decisões tomadas
+- [ ] Print/ foto da reunião com o cliente
 - [ ] Dúvidas pendentes
 
 **Repositório organizado**
 
-- [ ] Branches
-- [ ] Commits minimamente descritivos
-- [ ] PRs sendo utilizados
+- [ ] Branches, Commits e PRs
 - [ ] `.gitignore`
-- [ ] Estrutura inicial adequada
+- [ ] Estrutura inicial
 
 ## 05/10 — Entrega intermediária 2: marco da metade do projeto
 
 - [ ] MVP/protótipo parcial funcional
-- [ ] README v2, refletindo mudanças no projeto
-- [ ] Backlog atualizado
+- [ ] README refletindo mudanças no projeto
+- [ ] Backlog atualizado (pode ser print)
 - [ ] Funcionalidades concluídas e seus respectivos critérios de aceite
 - [ ] Registro de feedback do cliente e alterações realizadas a partir dele
 
