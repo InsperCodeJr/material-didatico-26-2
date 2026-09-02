@@ -306,7 +306,7 @@ Depois, no GitHub:
 |---|---|
 | **Imersão IA Generativa com Azure AI Foundry** — 16h de imersão prática, 08–09 de novembro, São Paulo (convite feito pelo palestrante ao final da aula) | <https://www.imersaogenai.online/> |
 | **LinkedIn do palestrante** (Henrique Eduardo Souza) — para dúvidas, contato ou acompanhar conteúdo sobre IA | <https://www.linkedin.com/in/hsouzaeduardo/> |
-| **Gravação da aula** — Gravação via Teams | `https://drive.google.com/file/d/1wtfi3RYHGtEnnnbfhU_rNJGepbWC2TzV/view?usp=sharing`|
+| **Gravação da aula** — Gravação via Teams | <https://drive.google.com/file/d/1wtfi3RYHGtEnnnbfhU_rNJGepbWC2TzV/view?usp=sharing> |
  
 > Alguns links (Triagem e servidor MCP) foram compartilhados no chat da aula via Teams e podem apontar para ambientes de desenvolvimento/demonstração, não necessariamente públicos ou estáveis a longo prazo.
  
