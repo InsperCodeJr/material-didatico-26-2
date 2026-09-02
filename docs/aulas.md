@@ -297,8 +297,19 @@ Depois, no GitHub:
 - Praticar a criação de agentes simples com o Google ADK usando a chave gratuita do Google AI Studio.
 - Experimentar transformar uma tarefa repetitiva do seu dia a dia (ex. organizar tarefas, gerar relatórios) em um fluxo com agente + MCP.
 - Reforçar a disciplina de **.gitignore** e proteção de credenciais em todo projeto novo, desde o primeiro commit.
-- Participar da **imersão de IA generativa** mencionada pelo palestrante (dois sábados), caso tenha interesse em aprofundar o tema com a equipe.
 
+---
+ 
+## 11. Links mencionados na aula
+ 
+| Recurso | Link |
+|---|---|
+| **Imersão IA Generativa com Azure AI Foundry** — 16h de imersão prática, 08–09 de novembro, São Paulo (convite feito pelo palestrante ao final da aula) | <https://www.imersaogenai.online/> |
+| **LinkedIn do palestrante** (Henrique Eduardo Souza) — para dúvidas, contato ou acompanhar conteúdo sobre IA | <https://www.linkedin.com/in/hsouzaeduardo/> |
+| **Gravação da aula** — Gravação via Teams | `https://drive.google.com/file/d/1wtfi3RYHGtEnnnbfhU_rNJGepbWC2TzV/view?usp=sharing`|
+ 
+> Alguns links (Triagem e servidor MCP) foram compartilhados no chat da aula via Teams e podem apontar para ambientes de desenvolvimento/demonstração, não necessariamente públicos ou estáveis a longo prazo.
+ 
 ---
 
 *Material gerado a partir da transcrição da capacitação realizada em 01/09/2026. Alguns trechos de conversa informal foram omitidos para manter o foco no conteúdo técnico.*
