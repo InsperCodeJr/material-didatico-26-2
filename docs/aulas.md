@@ -1,4 +1,6 @@
-# Aula 1: GitHub, Git e Agentes de IA
+# Aulas
+
+## Aula 1: GitHub, Git e Agentes de IA
 
 !!! info "Sobre esta capacitação"
     Sessão ministrada por **Henrique Eduardo da Silva Souza**, Head de AI e Dados, Microsoft MVP em AI, com a comunidade **Insper Code Jr**. O objetivo foi revisar boas práticas de Git/GitHub e, na sequência, construir agentes de IA do zero com o **Google ADK (Agent Development Kit)**, incluindo múltiplos agentes, ferramentas externas e MCP (Model Context Protocol).
@@ -7,7 +9,7 @@
 
 ---
 
-## 1. Por que isso importa
+### 1. Por que isso importa
 
 A engenharia de software está mudando rapidamente com IA generativa. Dominar bem Git/GitHub deixou de ser um diferencial e passou a ser **"preço de admissão"** — a base sobre a qual se constrói qualquer fluxo de trabalho moderno, incluindo fluxos com agentes de IA.
 
@@ -19,15 +21,15 @@ Ideia central da capacitação:
 
 ---
 
-## 2. Git: fundamentos
+### 2. Git: fundamentos
 
-### 2.1 O que é o Git
+#### 2.1 O que é o Git
 
 - Git é um **DVCS** (*Distributed Version Control System* — sistema de controle de versão **descentralizado**).
 - Ele armazena **snapshots** do código ao longo do tempo.
 - "Descentralizado" significa que cada pessoa do time tem uma cópia completa do repositório (com todo o histórico) na própria máquina, além de existir uma cópia remota (ex.: no GitHub).
 
-### 2.2 Antes do Git: os problemas antigos
+#### 2.2 Antes do Git: os problemas antigos
 
 - Times trabalhavam direto em um repositório compartilhado único, sem controle de versão real.
 - Se duas pessoas mexessem no mesmo arquivo ao mesmo tempo, surgia **conflito**, e alguém podia perder o trabalho feito.
@@ -37,7 +39,7 @@ Ideia central da capacitação:
 
 > **Lição prática:** comece a versionar um projeto com Git desde o primeiro commit. Projetos que só recebem Git depois de já estarem bagunçados tendem a continuar bagunçados.
 
-### 2.3 Estratégias de branch
+#### 2.3 Estratégias de branch
 
 | Estratégia | Como funciona | Quando usar |
 |---|---|---|
@@ -46,14 +48,14 @@ Ideia central da capacitação:
 
 **Por que Git Flow ajuda em produção:** se a `main` já acumulou várias mudanças ainda não testadas e aparece um bug crítico, seria arriscado subir tudo de uma vez só para corrigir o bug. Com Git Flow, você parte da última versão estável em produção, cria uma branch de **hotfix**, corrige, mescla de volta e leva **apenas essa correção** para produção — sem misturar com features ainda em desenvolvimento.
 
-### 2.4 Pull Requests (PRs)
+#### 2.4 Pull Requests (PRs)
 
 - Um PR é o mecanismo de pedir revisão de código antes de mesclar uma branch.
 - Hoje, cada vez mais essa revisão inicial é feita por **agentes de IA**, que revisam o PR antes (ou junto) de uma pessoa.
 
 ---
 
-## 3. GitHub e alternativas
+### 3. GitHub e alternativas
 
 - Cerca de 40% do mercado usa GitHub; o restante usa outras ferramentas, com destaque para o **Azure DevOps** (Microsoft) e o **Bitbucket** (Atlassian, geralmente integrado a Jira/Confluence).
 - O Azure DevOps tem funcionalidades equivalentes ao GitHub (repositório, pipelines, Codespaces) e adiciona:
@@ -61,14 +63,14 @@ Ideia central da capacitação:
   - **Wikis** internas.
   - **Dashboards** de pipelines, deployments e PRs abertos.
 
-### 3.1 CI/CD
+#### 3.1 CI/CD
 
 - **CI (Continuous Integration / Integração Contínua):** toda vez que um código é enviado para uma branch, um **pipeline de CI** é disparado automaticamente. Ele roda testes, simulações (*smoke tests*) e verificações de vulnerabilidade — para pegar problemas antes que cheguem à produção.
 - **CD (Continuous Delivery/Deployment / Entrega/Implantação Contínua):** depois que o CI valida o código, o CD gera o **pacote de entrega** (ex.: imagem Docker, container, executável, APK) e o implanta em produção, idealmente **sem deixar a aplicação indisponível**.
 - Quanto mais etapas o pipeline tem, mais tempo (e custo) ele consome — vale otimizar o número de etapas.
 - Esse fluxo de CI/CD, junto com boas mensagens de PR, também alimenta **release notes** automáticas: cada entrega documentada no PR pode virar uma nota de versão visível para o usuário final.
 
-### 3.2 GitHub Codespaces
+#### 3.2 GitHub Codespaces
 
 - Ambiente de desenvolvimento completo (tipo um VS Code) rodando na nuvem, acessível direto do navegador — **sem precisar instalar nada na máquina local**.
 - Útil para:
@@ -78,7 +80,7 @@ Ideia central da capacitação:
 
 ---
 
-## 4. Boas práticas de segurança e higiene de repositório
+### 4. Boas práticas de segurança e higiene de repositório
 
 - **Sempre configure o `.gitignore` corretamente antes do primeiro commit** — ele evita subir arquivos que não deveriam ir para o repositório (ambientes virtuais, chaves de API, arquivos `.env`).
 - **Nunca versione arquivos `.env` com chaves de API ou segredos.** Uma das formas mais comuns de vazamento de dados é justamente subir, sem querer, chaves e credenciais dentro do repositório.
@@ -86,9 +88,9 @@ Ideia central da capacitação:
 
 ---
 
-## 5. Construindo agentes de IA com Google ADK
+### 5. Construindo agentes de IA com Google ADK
 
-### 5.1 O que é o Google ADK
+#### 5.1 O que é o Google ADK
 
 - **ADK = Agent Development Kit**, framework de código aberto do Google para criar agentes de IA.
 - Pontos fortes citados:
@@ -96,7 +98,7 @@ Ideia central da capacitação:
   - Um dos primeiros frameworks a lançar suporte ao protocolo **A2A (Agent-to-Agent)** — agentes conversando com outros agentes.
   - Usado em grandes projetos reais pela equipe do palestrante.
 
-### 5.2 Preparando o ambiente
+#### 5.2 Preparando o ambiente
 
 ```bash
 # 1. Criar um ambiente virtual Python
@@ -117,7 +119,7 @@ pip install google-adk
 
 > Use sempre um ambiente virtual: isso evita problemas de compatibilidade entre bibliotecas de projetos diferentes na mesma máquina.
 
-### 5.3 Criando o primeiro agente
+#### 5.3 Criando o primeiro agente
 
 ```bash
 adk create agent
@@ -134,7 +136,7 @@ adk web
 
 Isso sobe uma interface no navegador para conversar com o agente, subir imagens/áudio, testar streaming de resposta e revisar **sessões**.
 
-### 5.4 Conceito de sessão (session)
+#### 5.4 Conceito de sessão (session)
 
 - Uma **sessão** é como uma "sala de conversa" entre o usuário e o agente.
 - Serve para:
@@ -142,7 +144,7 @@ Isso sobe uma interface no navegador para conversar com o agente, subir imagens/
   - Quando há **múltiplos agentes**, rastrear em qual agente da cadeia uma resposta se perdeu ou falhou.
 - Combinando `user_id` + `session_id`, é possível dar **memória** ao agente: ele passa a lembrar interações passadas (ex.: histórico de treinos de um usuário) e evoluir a resposta ao longo do tempo.
 
-### 5.5 Dando ferramentas (tools) ao agente
+#### 5.5 Dando ferramentas (tools) ao agente
 
 Exemplo: permitir que o agente busque informações no Google:
 
@@ -155,7 +157,7 @@ tools = [google_search]
 
 Regra importante do ADK observada na prática: **um agente que delega para sub-agentes não deve, ao mesmo tempo, ter ferramentas próprias que dupliquem o papel dos sub-agentes** — o framework reclama de conflito de configuração. A ferramenta deve ficar no sub-agente especializado; o agente "raiz" (root) apenas delega.
 
-### 5.6 Multi-agentes (sub-agentes)
+#### 5.6 Multi-agentes (sub-agentes)
 
 Conceitos-chave:
 
@@ -179,7 +181,7 @@ root_agent = Agent(
 
 > Dica prática do treinamento: escreva instruções (*system prompt*) longas e detalhadas — é comum e aceitável usar um LLM (ex. ChatGPT) para ajudar a redigir esse prompt inicial antes de refinar manualmente.
 
-### 5.7 Erros comuns ao trabalhar com múltiplos agentes/ferramentas
+#### 5.7 Erros comuns ao trabalhar com múltiplos agentes/ferramentas
 
 - Conflito de versão entre pacotes dependentes (ex. o ADK exigir uma versão mínima do pacote MCP; se a versão instalada for menor, dá erro de importação).
 - Esquema de saída (*output schema*) não configurado corretamente ao compartilhar ferramentas entre agentes.
@@ -189,22 +191,22 @@ root_agent = Agent(
 
 ---
 
-## 6. MCP — Model Context Protocol
+### 6. MCP — Model Context Protocol
 
-### 6.1 O que é e por que existe
+#### 6.1 O que é e por que existe
 
 - **MCP (Model Context Protocol)** é um protocolo padrão para conectar agentes a **serviços/APIs externos** sem precisar reescrever a integração do zero para cada framework de agente.
 - Analogia usada na aula: é como um **USB-C** — um único "conector" padrão que qualquer agente, de qualquer framework, consegue usar da mesma forma para acessar uma ferramenta externa.
 - Na prática, uma API já existente (ex. em Flask/FastAPI) pode expor uma mesma rota tanto como endpoint HTTP normal quanto como ferramenta MCP, normalmente usando um *decorator* — sem alterar o comportamento original do endpoint.
 
-### 6.2 Quando usar MCP em vez de apenas uma tool nativa (ex. Google Search)
+#### 6.2 Quando usar MCP em vez de apenas uma tool nativa (ex. Google Search)
 
 Use MCP quando você precisa conectar o agente a um **serviço externo específico** que não é coberto por ferramentas genéricas, por exemplo:
 - Consultar dados pessoais em um serviço (ex. Strava, dados de corrida).
 - Consultar vagas de emprego em uma plataforma própria de recrutamento.
 - Qualquer API interna da empresa/projeto que você queira "conectar" ao agente.
 
-### 6.3 Configurando um MCP no ADK (exemplo prático)
+#### 6.3 Configurando um MCP no ADK (exemplo prático)
 
 ```python
 from google.adk.tools.mcp_tool import MCPToolset, StreamableHTTPConnectionParams
@@ -225,7 +227,7 @@ pip install mcp
 
 - Assim como no caso dos sub-agentes, fique atento à **compatibilidade de versões** entre o pacote `mcp` e o `google-adk` — versões desalinhadas foram a causa de um erro real demonstrado na aula.
 
-### 6.4 Exemplo de caso de uso construído na aula
+#### 6.4 Exemplo de caso de uso construído na aula
 
 Um segundo agente ("Hunter") foi criado para:
 1. Conectar-se via MCP a um serviço externo de vagas de emprego.
@@ -235,7 +237,7 @@ Um segundo agente ("Hunter") foi criado para:
 
 ---
 
-## 7. Ferramentas de codificação assistida por IA — quando usar cada uma
+### 7. Ferramentas de codificação assistida por IA — quando usar cada uma
 
 Critério prático compartilhado pelo palestrante para escolher entre assistentes de código:
 
@@ -249,7 +251,7 @@ Critério prático compartilhado pelo palestrante para escolher entre assistente
 
 ---
 
-## 8. Publicando o trabalho e rodando em Codespaces
+### 8. Publicando o trabalho e rodando em Codespaces
 
 Fluxo final demonstrado, do agente local até rodando na nuvem:
 
@@ -274,7 +276,7 @@ Depois, no GitHub:
 
 ---
 
-## 9. Resumo de conceitos-chave (glossário rápido)
+### 9. Resumo de conceitos-chave (glossário rápido)
 
 - **DVCS** — Sistema de controle de versão descentralizado (o Git é um exemplo).
 - **Branch** — Ramificação do código para trabalhar em algo isoladamente antes de integrar.
@@ -292,7 +294,7 @@ Depois, no GitHub:
 
 ---
 
-## 10. Próximos passos sugeridos
+### 10. Próximos passos sugeridos
 
 - Praticar a criação de agentes simples com o Google ADK usando a chave gratuita do Google AI Studio.
 - Experimentar transformar uma tarefa repetitiva do seu dia a dia (ex. organizar tarefas, gerar relatórios) em um fluxo com agente + MCP.
@@ -300,7 +302,7 @@ Depois, no GitHub:
 
 ---
  
-## 11. Links mencionados na aula
+### 11. Links mencionados na aula
  
 | Recurso | Link |
 |---|---|
@@ -312,12 +314,12 @@ Depois, no GitHub:
 
 *Material gerado a partir da transcrição da capacitação realizada em 01/09/2026. Alguns trechos de conversa informal foram omitidos para manter o foco no conteúdo técnico.*
 
-# Aula 2: Projetos Ágeis & Requisitos
+## Aula 2: Projetos Ágeis & Requisitos
 
-# Aula 3: Web, APIs & Redes
+## Aula 3: Web, APIs & Redes
 
-# Aula 4: Arquitetura, Docker & Deploy
+## Aula 4: Arquitetura, Docker & Deploy
 
-# Aula 5: IA Aplicada ao Desenvolvimento
+## Aula 5: IA Aplicada ao Desenvolvimento
 
-# Aula 6: Qualidade, Segurança & Manutenibilidade
+## Aula 6: Qualidade, Segurança & Manutenibilidade
