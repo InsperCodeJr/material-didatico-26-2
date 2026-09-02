@@ -8,7 +8,7 @@ preparação inicial da turma.
 | Data | Encontro | Conteúdo |
 | --- | --- | --- |
 | 28/08 | Reunião inaugural | Apresentação do Code, combinados do semestre, formato das apostilas e alinhamento inicial da turma. |
-| 01/09 | Capacitação 1 | **Engenharia de Software & Git**: branches, commits, pull requests, code review, README, documentação e boas práticas. |
+| 01/09 | Capacitação 1 | **GitHub, Git e Agentes de IA**: branches, commits, pull requests, code review, README, documentação e boas práticas. |
 | 08/09 | Capacitação 2 | **Projetos Ágeis & Requisitos**: Scrum, Agile, Design Thinking, requisitos funcionais e não funcionais, user stories, critérios de aceite, casos de uso e transformação de problema em backlog. |
 | 11/09 | Entrega intermediária 1 | Acompanhamento dos projetos e feedback das primeiras entregas. Ver [entregáveis desta reunião](reunioes.md#1109-reuniao-intermediaria-1-definicao-e-estruturacao). |
 | 17/09 a 04/10 | *Atividades suspensas* | Pausa durante as semanas de prova. |
