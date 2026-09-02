@@ -40,6 +40,12 @@ theme:
   icon:
     repo: fontawesome/brands/github
 
+extra_css:
+  - assets/stylesheets/toc-dropdown.css
+
+extra_javascript:
+  - assets/javascripts/toc-dropdown.js
+
 nav:
   - Início: index.md
   - Cronograma:

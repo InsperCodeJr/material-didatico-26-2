@@ -1,0 +1,30 @@
+.md-nav--secondary .toc-dropdown-toggle {
+  align-items: center;
+  cursor: pointer;
+  gap: 0.25rem;
+}
+
+.md-nav--secondary .toc-dropdown-toggle > .md-ellipsis {
+  flex: 1 1 auto;
+}
+
+.md-nav--secondary .toc-dropdown-icon {
+  border-bottom: 0.1rem solid currentcolor;
+  border-right: 0.1rem solid currentcolor;
+  display: inline-block;
+  flex: 0 0 auto;
+  height: 0.45rem;
+  margin-left: auto;
+  opacity: 0.72;
+  transform: rotate(45deg);
+  transition: transform 160ms ease;
+  width: 0.45rem;
+}
+
+.md-nav--secondary .toc-dropdown-item:not(.toc-dropdown-collapsed) > .toc-dropdown-toggle .toc-dropdown-icon {
+  transform: rotate(-135deg);
+}
+
+.md-nav--secondary .toc-dropdown-item.toc-dropdown-collapsed > .md-nav {
+  display: none;
+}
