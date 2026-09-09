@@ -316,6 +316,325 @@ Depois, no GitHub:
 
 ## Aula 2: Projetos Ágeis & Requisitos
 
+Nesta aula vamos entender como estruturar o início de um projeto de software usando práticas ágeis, com foco total em responder a uma pergunta central antes de qualquer linha de código ser escrita:
+
+> **"Vocês entenderam o que precisam construir?"**
+
+Essa é exatamente a pergunta que a **Entrega Intermediária 1**, do dia **11/09**, vai avaliar. Tudo o que veremos aqui está diretamente conectado aos itens que vocês precisam entregar.
+
+---
+
+### 1. Por que "entender o problema" vem antes de codificar?
+
+Um erro comum em projetos (ágeis ou não) é começar a programar antes de saber exatamente:
+
+- Para quem o sistema é construído;
+- Qual problema ele resolve;
+- Quais restrições técnicas e de negócio existem;
+- Como saberemos que uma funcionalidade está "pronta".
+
+Em métodos ágeis, isso não significa fazer um documento gigante e engessado como no modelo cascata. Significa fazer o **mínimo de documentação necessária, mas com qualidade suficiente**, para que o time (e o cliente) tenham uma visão compartilhada do que será construído — e que essa visão possa evoluir a cada sprint.
+
+!!! note "Ágil não é "sem documentação""
+    Ágil não significa ausência de planejamento ou documentação. Significa documentação **enxuta, viva e revisada continuamente**, priorizando conversas e valor entregue sobre burocracia.
+
+---
+
+### 2. Visão geral da Entrega Intermediária 1 (11/09)
+
+**Foco principal:** vocês entenderam o que precisam construir?
+
+A entrega é composta por 5 blocos:
+
+1. README v1
+2. Documento de requisitos
+3. Backlog priorizado
+4. Registro do alinhamento com o cliente
+5. Repositório organizado
+
+Vamos destrinchar cada um.
+
+---
+
+### 3. README v1
+
+O `README.md` é o **cartão de visita** do repositório. É a primeira coisa que qualquer pessoa (professor, cliente, novo integrante do time) vai ler.
+
+#### Checklist obrigatório
+
+- [ ] Descrição do projeto
+- [ ] Tecnologias previstas
+- [ ] Integrantes
+
+#### O que colocar em cada item
+
+**Descrição do projeto**
+
+- Qual problema o projeto resolve?
+- Para quem é (público-alvo / cliente)?
+- Qual é o objetivo geral em 2-3 parágrafos, sem jargão técnico excessivo.
+
+**Tecnologias previstas**
+
+- Linguagens de programação;
+- Frameworks e bibliotecas principais;
+- Banco de dados;
+- Ferramentas de infraestrutura (se já souberem).
+
+!!! tip "Tudo bem mudar depois"
+    É normal que essa lista evolua. O importante nesta etapa é registrar a decisão **atual** do time, com base no que já foi discutido.
+
+**Integrantes**
+
+- Nome completo de cada integrante;
+- Papel/função no projeto (se já estiver definido, ex: Scrum Master, Dev Front-end, Dev Back-end);
+- Forma de contato (opcional, dependendo da política da disciplina).
+
+#### Modelo sugerido de README v1
+
+```markdown
+# Nome do Projeto
+
+### Descrição
+Breve descrição do problema que o projeto resolve e para quem ele é destinado.
+
+### Tecnologias previstas
+- Linguagem: ...
+- Framework: ...
+- Banco de dados: ...
+- Outras ferramentas: ...
+
+### Integrantes
+| Nome            | Função            |
+|-----------------|-------------------|
+| Fulano de Tal    | Scrum Master      |
+| Ciclana da Silva | Dev Back-end      |
+```
+
+---
+
+### 4. Documento de requisitos
+
+Este é o coração da entrega: é aqui que o time demonstra que entendeu **o que** precisa ser construído.
+
+#### Checklist obrigatório
+
+- [ ] Requisitos funcionais
+- [ ] Requisitos não funcionais
+- [ ] User stories
+- [ ] Critérios de aceite
+- [ ] Casos de uso, quando aplicáveis
+
+#### 4.1 Requisitos funcionais (RF)
+
+Descrevem **o que o sistema deve fazer** — comportamentos, funcionalidades e ações concretas.
+
+Exemplo:
+
+- RF01 — O sistema deve permitir que o usuário se cadastre com e-mail e senha.
+- RF02 — O sistema deve permitir a criação de tarefas com título, descrição e prazo.
+
+#### 4.2 Requisitos não funcionais (RNF)
+
+Descrevem **como o sistema deve se comportar**, em termos de qualidade, restrições técnicas e não relacionados a uma funcionalidade específica.
+
+Categorias comuns:
+
+- **Desempenho** — ex: tempo de resposta menor que 2 segundos;
+- **Segurança** — ex: senhas devem ser armazenadas com hash;
+- **Usabilidade** — ex: interface responsiva para mobile;
+- **Disponibilidade** — ex: sistema deve ficar disponível 99% do tempo;
+- **Compatibilidade** — ex: deve funcionar nos principais navegadores.
+
+Exemplo:
+
+- RNF01 — O sistema deve responder a requisições em até 2 segundos em 95% dos casos.
+- RNF02 — As senhas dos usuários devem ser armazenadas de forma criptografada.
+
+#### 4.3 User Stories
+
+São descrições curtas de funcionalidades escritas do ponto de vista do usuário, seguindo geralmente o formato:
+
+```
+Como [tipo de usuário]
+Quero [ação/funcionalidade]
+Para que [benefício/motivo]
+```
+
+Exemplo:
+
+> Como usuário cadastrado,
+> quero criar uma tarefa com prazo,
+> para que eu possa organizar minhas entregas.
+
+#### 4.4 Critérios de aceite
+
+Definem **quando uma user story pode ser considerada "pronta"**. São condições objetivas e testáveis, geralmente vinculadas a cada user story.
+
+Um formato bastante usado é o **Given-When-Then**:
+
+```
+Dado que o usuário está autenticado
+Quando ele preenche o título e o prazo da tarefa e clica em "Salvar"
+Então a tarefa deve aparecer na lista de tarefas do usuário
+```
+
+!!! warning "Critério de aceite não é teste automatizado"
+    Não confundam critérios de aceite com testes automatizados. Eles são a **especificação** do comportamento esperado; os testes são a **verificação técnica** disso.
+
+#### 4.5 Casos de uso (quando aplicáveis)
+
+Para funcionalidades mais complexas, com múltiplos passos, atores e possíveis exceções, vale a pena descrever um caso de uso completo:
+
+- **Nome do caso de uso**
+- **Ator(es) envolvidos**
+- **Pré-condições**
+- **Fluxo principal** (passo a passo)
+- **Fluxos alternativos / exceções**
+- **Pós-condições**
+
+Nem todo projeto precisa de casos de uso detalhados para tudo — usem quando o fluxo tiver complexidade real (múltiplas decisões, integrações, atores diferentes).
+
+---
+
+### 5. Backlog priorizado
+
+O backlog é a lista viva de tudo o que precisa ser feito no projeto, organizada por prioridade.
+
+#### Checklist obrigatório
+
+- [ ] Print do Backlog inicial com **size**, **responsável** e **organização em sprints**
+
+#### O que sua ferramenta de backlog precisa mostrar
+
+1. **Itens do backlog** (user stories, tarefas técnicas, bugs conhecidos, etc.);
+2. **Size (estimativa de esforço)** — pode ser story points, T-shirt size (P/M/G) ou horas, dependendo do que o time combinou;
+3. **Responsável** — quem vai (ou pode vir a) executar aquele item;
+4. **Organização em sprints** — os itens já devem estar distribuídos em pelo menos as primeiras sprints do projeto.
+
+Ferramentas comuns para isso: Trello, Jira, GitHub Projects, ClickUp, Notion.
+
+!!! tip "Priorização"
+    Uma técnica simples e eficaz para priorizar é o **MoSCoW**:
+
+    - **M**ust have — essencial
+    - **S**hould have — importante, mas não bloqueante
+    - **C**ould have — desejável
+    - **W**on't have (por agora) — fora do escopo atual
+
+---
+
+### 6. Registro do alinhamento com o cliente
+
+Projetos ágeis dependem de contato constante com quem vai usar ou validar o produto. Essa entrega pede evidência desse contato.
+
+#### Checklist obrigatório
+
+- [ ] Print/foto da reunião com o cliente
+- [ ] Dúvidas pendentes
+
+#### Dicas práticas
+
+- Guardem prints de chamadas de vídeo, capturas de conversas por e-mail/WhatsApp ou fotos de reuniões presenciais;
+- Façam uma **ata resumida** da reunião: data, participantes, principais decisões;
+- Listem explicitamente as **dúvidas que ainda não foram respondidas** pelo cliente — isso mostra maturidade e planejamento, não falta de organização.
+
+Exemplo de registro:
+
+```markdown
+### Alinhamento com o cliente — 05/09/2026
+
+**Participantes:** Cliente (Fulano), Time (Ciclana, Beltrano)
+
+**Principais decisões:**
+- Prioridade para o módulo de cadastro de usuários.
+- Cliente confirmou uso de autenticação via e-mail (sem login social por enquanto).
+
+**Dúvidas pendentes:**
+- O sistema precisa suportar múltiplos idiomas?
+- Existe algum prazo legal para retenção de dados dos usuários?
+```
+
+---
+
+### 7. Repositório organizado
+
+Por fim, a entrega avalia a organização técnica do repositório do projeto — sinal de que o time já está aplicando boas práticas de desenvolvimento colaborativo.
+
+#### Checklist obrigatório
+
+- [ ] Branches, Commits e PRs
+- [ ] `.gitignore`
+- [ ] Estrutura inicial
+
+#### Boas práticas esperadas
+
+**Branches**
+
+- Uma branch principal estável (ex: `main`);
+- Branches de desenvolvimento por feature (ex: `feature/cadastro-usuario`).
+
+**Commits**
+
+- Mensagens claras e objetivas, descrevendo o que foi feito;
+- Prefira commits pequenos e frequentes a um único commit gigante.
+
+**Pull Requests (PRs)**
+
+- Mesmo em times pequenos, usem PRs para revisar código antes de mesclar na branch principal;
+- Descrevam no PR o que foi alterado e por quê.
+
+**`.gitignore`**
+
+- Configurado para a stack do projeto, evitando subir arquivos como `node_modules/`, `.env`, arquivos de build, etc.
+
+**Estrutura inicial**
+
+- Organização mínima de pastas já refletindo a arquitetura pretendida (ex: `src/`, `docs/`, `tests/`).
+
+---
+
+### 8. Resumo — Checklist completo da Entrega 1 (11/09)
+
+Use esta lista como conferência final antes de entregar:
+
+- [ ] **README v1**
+    - [ ] Descrição do projeto
+    - [ ] Tecnologias previstas
+    - [ ] Integrantes
+- [ ] **Documento de requisitos**
+    - [ ] Requisitos funcionais
+    - [ ] Requisitos não funcionais
+    - [ ] User stories
+    - [ ] Critérios de aceite
+    - [ ] Casos de uso, quando aplicáveis
+- [ ] **Backlog priorizado**
+    - [ ] Print do backlog com size, responsável e sprints
+- [ ] **Registro do alinhamento com o cliente**
+    - [ ] Print/foto da reunião
+    - [ ] Dúvidas pendentes
+- [ ] **Repositório organizado**
+    - [ ] Branches, commits e PRs
+    - [ ] `.gitignore`
+    - [ ] Estrutura inicial
+
+!!! success "Objetivo desta entrega"
+    Não é entregar código funcionando. É provar, com evidências concretas, que o time **sabe exatamente o que vai construir**, para quem, e como o trabalho está organizado para começar.
+
+---
+
+### 9. Para praticar
+
+Antes da entrega, reúnam o time e respondam em conjunto:
+
+1. Se uma pessoa de fora lesse só o README, ela entenderia o projeto em 1 minuto?
+2. Cada user story tem pelo menos um critério de aceite testável?
+3. O backlog já reflete a priorização real (o que é essencial vs. o que é "nice to have")?
+4. As dúvidas registradas com o cliente já foram encaminhadas para resposta?
+5. Qualquer integrante do time consegue clonar o repositório e entender a estrutura sem precisar perguntar nada?
+
+Se a resposta for "sim" para todas, vocês estão prontos para a Entrega Intermediária 1.
+
 ## Aula 3: Web, APIs & Redes
 
 ## Aula 4: Arquitetura, Docker & Deploy
