@@ -10,14 +10,14 @@ preparação inicial da turma.
 | 28/08 | Reunião inaugural | Apresentação do Code, combinados do semestre, formato das apostilas e alinhamento inicial da turma. |
 | 01/09 | Capacitação 1 | **GitHub, Git e Agentes de IA**: branches, commits, pull requests, code review, README, documentação e boas práticas. |
 | 08/09 | Capacitação 2 | **Projetos Ágeis & Requisitos**: Scrum, Agile, Design Thinking, requisitos funcionais e não funcionais, user stories, critérios de aceite, casos de uso e transformação de problema em backlog. |
-| 11/09 | Entrega intermediária 1 | Acompanhamento dos projetos e feedback das primeiras entregas. Ver [entregáveis desta reunião](reunioes.md#1109-reuniao-intermediaria-1-definicao-e-estruturacao). |
+| 13/09 | Entrega intermediária 1 | Acompanhamento dos projetos e feedback das primeiras entregas. Ver [entregáveis desta reunião](reunioes.md#1309-entrega-intermediaria-1-definicao-e-estruturacao). |
 | 17/09 a 04/10 | *Atividades suspensas* | Pausa durante as semanas de prova. |
-| 05/10 | Entrega intermediária 2 | Retomada depois das provas e alinhamento das entregas práticas. Ver [entregáveis desta reunião](reunioes.md#0510-reuniao-intermediaria-2-execucao-e-retomada). |
-| 06/10 | Capacitação 3 | **Web, APIs & Redes**: arquitetura cliente-servidor, HTTP/HTTPS, DNS, TCP/IP, REST, JSON, métodos HTTP, status codes, headers, autenticação, CORS e noções de segurança. |
-| 13/10 | Capacitação 4 | **Arquitetura, Docker & Deploy**: arquitetura em camadas, UML essencial, Docker, containers, variáveis de ambiente, cloud/AWS, deploy e introdução a CI/CD. |
-| 20/10 | Capacitação 5 | **IA Aplicada ao Desenvolvimento**: LLMs, tokens e contexto, prompting, APIs de IA, structured outputs, embeddings, RAG, agentes e ferramentas de coding assistido. |
-| 27/10 | Capacitação 6 | **Qualidade, Segurança & Manutenibilidade**: testes, segurança básica, secrets, logs, observabilidade, GitHub Actions/CI/CD, revisão arquitetural, dívida técnica e decisões técnicas. |
-| 30/10 | Reunião final | Fechamento do semestre, apresentações finais dos projetos e feedbacks. Ver [entregáveis desta reunião](reunioes.md#3010-reuniao-final-produto-documentacao-legado). |
+|07/10 | Reunião de Feedback | Notas e comentários sobre a Entrega Intermediária 1 e alinhamento de espectativas para a entrega 2. |
+| 11/10 | Entrega intermediária 2 | Retomada depois das provas e alinhamento das entregas práticas. Ver [entregáveis desta reunião](reunioes.md#1110-entrega-intermediaria-2-marco-da-metade-do-projeto). |
+| 06/10 | Capacitação 3 | **Web & APIs**: cliente-servidor, HTTP (métodos, status codes, headers), REST/JSON, autenticação básica (token/JWT) e CORS. |
+| 14/10 | Capacitação 4 | **Redes**: aula em parceria com a Insper Sec. |
+| 20/10 | Capacitação 5 | **IA Aplicada ao Desenvolvimento**: Embeddings, RAG e agentes. |
+| 27/10 | Reunião final | Fechamento do semestre, apresentações finais dos projetos e feedbacks. Ver [entregáveis desta reunião](reunioes.md#2710-reuniao-final-produto-documentacao-legado). |
 | A definir | Banca do cliente | Reunião de cada grupo com o cliente ou empresa, uma semana antes ou depois da reunião final, conforme disponibilidade da equipe e do cliente. Ver [orientações da banca](reunioes.md#banca-propria-do-cliente). |
 
 !!! info "Critérios detalhados das reuniões"
@@ -34,9 +34,9 @@ Resumo rápido — detalhes completos em [Entregáveis por reunião](reunioes.md
 
 | Data | Reunião | Entregáveis principais |
 | --- | --- | --- |
-| 11/09 | Entrega intermediária 1 | README v1, documento de requisitos, backlog priorizado, planejamento do projeto, registro de alinhamento com o cliente e repositório organizado. |
-| 05/10 | Entrega intermediária 2 | MVP ou protótipo parcial, README v2, backlog atualizado, comparação planejado x realizado, feedback do cliente, boas práticas no Git e plano atualizado. |
-| 30/10 | Reunião final | README final, documentação técnica, backlog final, vídeo de demonstração, apresentação final e handoff do projeto. |
+| 13/09 | Entrega intermediária 1 | README v1, documento de requisitos, backlog priorizado, planejamento do projeto, registro de alinhamento com o cliente e repositório organizado. |
+| 11/10 | Entrega intermediária 2 | MVP ou protótipo parcial, README v2, backlog atualizado, comparação planejado x realizado, feedback do cliente, boas práticas no Git e plano atualizado. |
+| 27/10 | Reunião final | README final, documentação técnica, backlog final, vídeo de demonstração, apresentação final e handoff do projeto. |
 
 ## Preparação inicial
 

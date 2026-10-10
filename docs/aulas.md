@@ -320,7 +320,7 @@ Nesta aula vamos entender como estruturar o início de um projeto de software us
 
 > **"Vocês entenderam o que precisam construir?"**
 
-Essa é exatamente a pergunta que a **Entrega Intermediária 1**, do dia **11/09**, vai avaliar. Tudo o que veremos aqui está diretamente conectado aos itens que vocês precisam entregar.
+Essa é exatamente a pergunta que a **Entrega Intermediária 1**, do dia **13/09**, vai avaliar. Tudo o que veremos aqui está diretamente conectado aos itens que vocês precisam entregar.
 
 ---
 
@@ -340,7 +340,7 @@ Em métodos ágeis, isso não significa fazer um documento gigante e engessado c
 
 ---
 
-### 2. Visão geral da Entrega Intermediária 1 (11/09)
+### 2. Visão geral da Entrega Intermediária 1 (13/09)
 
 **Foco principal:** vocês entenderam o que precisam construir?
 
@@ -594,7 +594,7 @@ Por fim, a entrega avalia a organização técnica do repositório do projeto �
 
 ---
 
-### 8. Resumo — Checklist completo da Entrega 1 (11/09)
+### 8. Resumo — Checklist completo da Entrega 1 (13/09)
 
 Use esta lista como conferência final antes de entregar:
 

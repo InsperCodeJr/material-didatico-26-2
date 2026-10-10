@@ -5,7 +5,7 @@ que cada turma já viu de capacitação até aquele momento. A ideia não é
 cobrar código pronto o tempo todo, e sim avaliar se o time está entendendo
 o problema, gerenciando bem o projeto e evoluindo de forma consistente.
 
-## 11/09 — Entrega intermediária 1: definição e estruturação
+## 13/09 — Entrega intermediária 1: definição e estruturação
 
 Foco principal: **"vocês entenderam o que precisam construir?"**.
 
@@ -39,7 +39,7 @@ Foco principal: **"vocês entenderam o que precisam construir?"**.
 - [ ] `.gitignore`
 - [ ] Estrutura inicial
 
-## 05/10 — Entrega intermediária 2: marco da metade do projeto
+## 11/10 — Entrega intermediária 2: marco da metade do projeto
 
 - [ ] MVP/protótipo parcial funcional
 - [ ] README refletindo mudanças no projeto
@@ -50,7 +50,7 @@ Foco principal: **"vocês entenderam o que precisam construir?"**.
 !!! tip "O que precisa estar feito até agora?"
     Vocês precisam ter uma versão mínima do produto (MVP) para apresentar ao cliente. Em cima disso, poderão definir o que de fato vão conseguir entregar no projeto final e conseguiremos avaliar o que vocês aprenderam nas capacitações.
 
-## 30/10 — Reunião final: produto + documentação + legado
+## 27/10 — Reunião final: produto + documentação + legado
 
 Nesta reunião todas as seis capacitações já aconteceram. Além dos
 entregáveis específicos de cada case, existe uma **entrega de
