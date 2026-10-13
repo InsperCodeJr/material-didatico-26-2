@@ -635,10 +635,18 @@ Antes da entrega, reúnam o time e respondam em conjunto:
 
 Se a resposta for "sim" para todas, vocês estão prontos para a Entrega Intermediária 1.
 
-## Aula 3: Web, APIs & Redes
+## Aula 4: Web & APIs
 
-## Aula 4: Arquitetura, Docker & Deploy
+!!! info "Sobre essa capacitação"
+    Sessão ministrada por **Eduardo Zambom**, Doutor em Ciência da Computação pela Universidade de São Paulo (2019), Mestre em Ciência da Computação pela Universidade Federal de São Carlos (2010) e Bacharel em Ciência da Computação pela Universidade Federal de São Carlos (2007); com a comunidade **Insper Code Jr**. O material de apoio, bem como a dinâmica da aula, são de autoria do professor.
+---
 
-## Aula 5: IA Aplicada ao Desenvolvimento
+## Aula 5: Redes
+[Material produzido pela Liga Insper Sec](https://gitinspersec.github.io/site/aulas/redTeam/aula3/protocolos_tcp/)
 
-## Aula 6: Qualidade, Segurança & Manutenibilidade
+!!! info "Autoria"
+    O material, bem como a dinâmica e roteiro de aula, são de autoria e propriedade da [Liga Insper Sec](https://www.instagram.com/ligainspersec/) e do Diretor [Lucas Haro](https://br.linkedin.com/in/lucasharo). 
+    O Insper Code Jr. agradece a parceria e disponibilidade!
+---
+
+## Aula 6: IA Aplicada ao Desenvolvimento
