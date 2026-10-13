@@ -641,6 +641,9 @@ Se a resposta for "sim" para todas, vocês estão prontos para a Entrega Interme
     Sessão ministrada por **Eduardo Zambom**, Doutor em Ciência da Computação pela Universidade de São Paulo (2019), Mestre em Ciência da Computação pela Universidade Federal de São Carlos (2010) e Bacharel em Ciência da Computação pela Universidade Federal de São Carlos (2007); com a comunidade **Insper Code Jr**. O material de apoio, bem como a dinâmica da aula, são de autoria do professor.
 ---
 
+[Material produzido pelo professor](https://github.com/ezambomsantana/insper-code-web-apis-2)
+
+
 ## Aula 5: Redes
 [Material produzido pela Liga Insper Sec](https://gitinspersec.github.io/site/aulas/redTeam/aula3/protocolos_tcp/)
 
